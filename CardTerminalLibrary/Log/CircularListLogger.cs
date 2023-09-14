@@ -1,11 +1,8 @@
 /**
- * CircularListLogger.cs - Logger der in eine zirkul‰re Liste protokolliert.
+ * CircularListLogger.cs - Logger der in eine zirkul√§re Liste protokolliert.
  */
 using System;
-using System.Text;
 using SysDebug = System.Diagnostics.Debug;
-
-using Wiffzack.Diagnostic.Log;
 
 namespace Wiffzack.Diagnostic.Log
 {
@@ -13,7 +10,7 @@ namespace Wiffzack.Diagnostic.Log
 	public delegate void CircularListFlushHandler();
 
 	/**
-	 * Ein Logger, der in ein zirkul‰res Array protokolliet.
+	 * Ein Logger, der in ein zirkul√§res Array protokolliet.
 	 */
 	public class CircularListLogger : AbstractLogger
 	{
@@ -24,8 +21,8 @@ namespace Wiffzack.Diagnostic.Log
 		private event CircularListFlushHandler _onFlush;
 
 		/**
-		 * Konstruiert einen Zirkul‰ren Logger mit der angegebenen 
-		 * Listen-Grˆﬂe
+		 * Konstruiert einen Zirkul√§ren Logger mit der angegebenen 
+		 * Listen-Gr√∂√üe
 		 */
 		public CircularListLogger(Logger parent, LogLevel init_level,
 			string logger_name) : this(parent, init_level, logger_name, 100)
@@ -33,8 +30,8 @@ namespace Wiffzack.Diagnostic.Log
 		}
 
 		/**
-		 * Konstruiert einen Zirkul‰ren Logger mit der angegebenen 
-		 * Listen-Grˆﬂe
+		 * Konstruiert einen Zirkul√§ren Logger mit der angegebenen 
+		 * Listen-Gr√∂√üe
 		 */
 		public CircularListLogger(Logger parent, LogLevel init_level,
 			string logger_name, int list_length) : base(parent, init_level, logger_name)

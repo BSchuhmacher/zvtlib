@@ -1,12 +1,9 @@
 /**
- * Wiffzack/Diagnostic/Log/BuiltinLoggerFactory.cs - Factory für die
+ * Wiffzack/Diagnostic/Log/BuiltinLoggerFactory.cs - Factory fÃ¼r die
  *                                                   eingebauten Logger.
  *
  * $Id: BuiltinLoggerFactory.cs,v 1.1 2005/07/11 08:46:14 johannes Exp $
  */
-using System;
-using System.IO;
-
 
 namespace Wiffzack.Diagnostic.Log
 {
@@ -21,7 +18,7 @@ namespace Wiffzack.Diagnostic.Log
 
         /**
          * Wird vom LogManager aufgerufen um die Liste
-         * der unterstützten Logger abzurufen.
+         * der unterstÃ¼tzten Logger abzurufen.
          */
         public override string[] SupportedLoggers
         {

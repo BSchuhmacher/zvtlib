@@ -4,19 +4,18 @@
  * $Id: AbstractLogger.cs,v 1.2 2005/07/14 12:27:14 johannes Exp $
  */
 using System;
-using System.Text;
 
 namespace Wiffzack.Diagnostic.Log
 {
 	/**
-	 * Diese Klasse stellt das Grundgerüst für andere Logger zur Verfügung.
-	 * Um einen eigenen Logger-Typ zu implementieren müssen lediglich die
+	 * Diese Klasse stellt das GrundgerÃ¼st fÃ¼r andere Logger zur VerfÃ¼gung.
+	 * Um einen eigenen Logger-Typ zu implementieren mÃ¼ssen lediglich die
 	 * abstrakten "InternalLogXXX" Methoden bereitgestellt werden.   
 	 *
 	 * Wichtig: Parent-Logger, Log-Domain und Logger-Name sind 
 	 * Invarianten der erzeugten Logger-Objekte. (D.h. diese Eigenschaften
 	 * werden _exakt_ einmal bei der Konstruktion des Objekts festgelegt
-	 * und können anschließend nicht mehr verändert werden.)
+	 * und kÃ¶nnen anschlieÃŸend nicht mehr verÃ¤ndert werden.)
 	 */
 	public abstract class AbstractLogger : Logger
 	{
@@ -44,9 +43,9 @@ namespace Wiffzack.Diagnostic.Log
 		 *------------------------------------------------------------*/
       
 		/**
-		 * Gibt den übergeordneten Logger zurück.
-		 * (Diese Methode gibt NULL zurück, wenn der Logger keinen
-		 * übergeordneten Logger besitzt.) 
+		 * Gibt den Ã¼bergeordneten Logger zurÃ¼ck.
+		 * (Diese Methode gibt NULL zurÃ¼ck, wenn der Logger keinen
+		 * Ã¼bergeordneten Logger besitzt.) 
 		 */
 		public Logger Parent 
 		{ 
@@ -63,7 +62,7 @@ namespace Wiffzack.Diagnostic.Log
 		}
 
 		/**
-		 * Vollständiger Name der Logger-Domain für diesen Logger.
+		 * VollstÃ¤ndiger Name der Logger-Domain fÃ¼r diesen Logger.
 		 */
 		public string DomainName 
 		{ 
@@ -71,8 +70,8 @@ namespace Wiffzack.Diagnostic.Log
 		}
 
 		/**
-		 * Loglevel für diesen Logger. (Entspricht somit dem Loglevel
-		 * für die von diesem Logger erzeugte Log-Domain)
+		 * Loglevel fÃ¼r diesen Logger. (Entspricht somit dem Loglevel
+		 * fÃ¼r die von diesem Logger erzeugte Log-Domain)
 		 */
 		public virtual LogLevel Level 
 		{ 
@@ -88,7 +87,7 @@ namespace Wiffzack.Diagnostic.Log
 		}
 
 		/**
-		 * Legt fest, ob Log-Meldungen auch an den übergeordneten Logger
+		 * Legt fest, ob Log-Meldungen auch an den Ã¼bergeordneten Logger
 		 * weitergeleitet werden sollen.
 		 */
 		public virtual bool NotifyParent 
@@ -107,7 +106,7 @@ namespace Wiffzack.Diagnostic.Log
 		/**
 		 * Protokolliert den angegebenen Log-Record. (Diese Methode
 		 * wird u.a. benutzt um die Weiterleitung von Log-Meldungen
-		 * an übergeordnete Logger zu implementieren.)
+		 * an Ã¼bergeordnete Logger zu implementieren.)
 		 */
 		public void Log(LogRecord record)
 		{
@@ -138,7 +137,7 @@ namespace Wiffzack.Diagnostic.Log
 		}
 
 		/**
-		 * Sorgt dafür das gepufferte Daten geschrieben werden.
+		 * Sorgt dafÃ¼r das gepufferte Daten geschrieben werden.
 		 */
 		public void Flush()
 		{
@@ -243,7 +242,7 @@ namespace Wiffzack.Diagnostic.Log
 		 * Erzeugt einen geeigneten LogRecord und ruft die Log-Methode
 		 * des Loggers auf.
 		 *
-		 * Abgeleitete Klassen können diese Methode überschreiben
+		 * Abgeleitete Klassen kÃ¶nnen diese Methode Ã¼berschreiben
 		 * um die Nachrichtenformatierung anzupassen.
 		 */
 		protected virtual void InternalLog(LogLevel level,
@@ -262,7 +261,7 @@ namespace Wiffzack.Diagnostic.Log
 		 * Die InternalPublish Methode wird mit aktivem sync_lock_
 		 * Monitor aufgerufen. (D.h. sofern die Implementation nur
 		 * mit Unterobjekten dieses Loggers arbeitet braucht keine
-		 * besondere Rücksicht auf die Thread-Sicherheit genommen 
+		 * besondere RÃ¼cksicht auf die Thread-Sicherheit genommen 
 		 * werden.)
 		 */
 		protected abstract void InternalPublish(LogRecord record);

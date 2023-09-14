@@ -1,8 +1,7 @@
 /**
- * LogUtils.cs - Verschiedene kleine Hilfsmittel für die Protokollierung
+ * LogUtils.cs - Verschiedene kleine Hilfsmittel fÃ¼r die Protokollierung
  */
 using System;
-using System.Xml;
 using System.Text;
 using System.Data;
 
@@ -92,7 +91,7 @@ namespace Wiffzack.Diagnostic.Log
 					bld.AppendFormat("{0:X2} ", data[n_offset]);
 				}
 
-				// Füllzeichen schreiben
+				// FÃ¼llzeichen schreiben
 				for (int n_fill = line_length; n_fill < HEXDUMP_BYTESPERLINE; ++n_fill)
 					bld.Append("   ");
 

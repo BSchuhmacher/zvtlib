@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.TransportLayer
+﻿namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.TransportLayer
 {
     /// <summary>
     /// Encapsulates the data from an APDU in a transport specific structure

@@ -1,5 +1,3 @@
-using System;
-
 namespace Wiffzack.Devices.CardTerminals
 {
 	/**

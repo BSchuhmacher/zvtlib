@@ -1,12 +1,11 @@
 /**
- * Wiffzack/Diagnostic/Log/TextLogger.cs - Logger für TextWriter-basierte
+ * Wiffzack/Diagnostic/Log/TextLogger.cs - Logger fÃ¼r TextWriter-basierte
  *                                         Ausgabe.
  *
  * $Id: TextLogger.cs,v 1.2 2005/08/02 14:35:20 johannes Exp $
  */
 using System;
 using System.IO;
-using System.Text;
 
 namespace Wiffzack.Diagnostic.Log
 {
@@ -56,7 +55,7 @@ namespace Wiffzack.Diagnostic.Log
       }
 
       /**
-       * Ermöglicht die "on-the-flight" Umschaltung der Logfiles.
+       * ErmÃ¶glicht die "on-the-flight" Umschaltung der Logfiles.
        *
        * Mit SwitchStreams(null) kann die Ausgabe dieses Loggers
        * zeitweise deaktiviert werden.
@@ -71,7 +70,7 @@ namespace Wiffzack.Diagnostic.Log
       }
 
       /**
-       * Schließt den Ausgabestream für diesen Logger.
+       * SchlieÃŸt den Ausgabestream fÃ¼r diesen Logger.
        */
       public virtual void Close()
       {

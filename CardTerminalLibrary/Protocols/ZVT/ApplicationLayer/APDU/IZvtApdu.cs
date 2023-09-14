@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer
+﻿namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer
 {
     /// <summary>
     /// Interface for all available Application Protocol Data Units (APDU)

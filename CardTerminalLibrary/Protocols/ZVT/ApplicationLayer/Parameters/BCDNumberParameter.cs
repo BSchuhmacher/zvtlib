@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using Wiffzack.Diagnostic.Log;
+
 namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.Parameters
 {
     public class BCDNumberParameter:IParameter

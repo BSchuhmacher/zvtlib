@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Wiffzack.Devices.CardTerminals.Protocols.ZVT.TransportLayer;
 using Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.APDU;
 using Wiffzack.Devices.CardTerminals.Commands;
-using Wiffzack.Devices.CardTerminals.Common;
 
 namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.Commands
 {

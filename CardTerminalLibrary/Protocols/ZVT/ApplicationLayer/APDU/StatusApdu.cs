@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.Parameters;
-
-namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.APDU
+﻿namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.APDU
 {
     public class StatusApdu : ApduBase
     {

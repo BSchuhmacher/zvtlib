@@ -1,9 +1,10 @@
 /**
- * Wiffzack/Diagnostic/Log/LoggerFactory.cs - Logger-Fabrik für Log-Manager
+ * Wiffzack/Diagnostic/Log/LoggerFactory.cs - Logger-Fabrik fÃ¼r Log-Manager
  *
  * $Id: LoggerFactory.cs,v 1.2 2005/07/29 14:52:38 johannes Exp $
  */
-using System;
+
+
 
 // using Wiffzack.Interop;
 

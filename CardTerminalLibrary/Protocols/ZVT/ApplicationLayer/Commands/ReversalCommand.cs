@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.APDU;
+﻿using Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.APDU;
 using Wiffzack.Devices.CardTerminals.Protocols.ZVT.TransportLayer;
 using Wiffzack.Devices.CardTerminals.Commands;
 using Wiffzack.Diagnostic.Log;
 using System.Xml;
-using Wiffzack.Devices.CardTerminals.Common;
-using Wiffzack.Services.Utils;
 using Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.Parameters;
 
 namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.Commands

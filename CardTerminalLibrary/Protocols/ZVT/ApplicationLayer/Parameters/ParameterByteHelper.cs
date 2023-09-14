@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+
 namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.Parameters
 {
 	public class ParameterByteHelper

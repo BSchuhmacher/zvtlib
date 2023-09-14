@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Net.Sockets;
 using System.Net;
 using Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer;
 using Wiffzack.Devices.CardTerminals.Common;
 using System.Xml;
 using Wiffzack.Services.Utils;
-using System.Threading;
 using Wiffzack.Diagnostic.Log;
 
 namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.TransportLayer

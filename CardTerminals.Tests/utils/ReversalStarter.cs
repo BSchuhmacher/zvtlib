@@ -1,15 +1,9 @@
-using System.Linq;
 using System.IO;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Xml;
-using Wiffzack.Devices.CardTerminals.Protocols.ZVT.TransportLayer;
 using Wiffzack.Diagnostic.Log;
 using Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer;
-using System.IO.Ports;
 using Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.Commands;
-using Wiffzack.Devices.CardTerminals.Protocols.ZVT.ApplicationLayer.Parameters;
 using Wiffzack.Devices.CardTerminals.Commands;
 using Wiffzack.Services.Utils;
 namespace Wiffzack.Devices.CardTerminals.Tests

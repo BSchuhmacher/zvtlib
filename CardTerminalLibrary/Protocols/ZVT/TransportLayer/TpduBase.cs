@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.TransportLayer
+﻿namespace Wiffzack.Devices.CardTerminals.Protocols.ZVT.TransportLayer
 {
     public abstract class TpduBase : IZvtTpdu
     {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Wiffzack.Devices.CardTerminals.Commands
+﻿namespace Wiffzack.Devices.CardTerminals.Commands
 {
     /// <summary>
     /// Starts the process of reversal,
