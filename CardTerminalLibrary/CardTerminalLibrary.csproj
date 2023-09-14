@@ -25,6 +25,9 @@
       <LastGenOutput>LangDe.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="7.0.5" />
+  </ItemGroup>
   <PropertyGroup>
     <PostBuildEvent>xcopy $(TargetDir)* $(ProjectDir)binaries\ /Y</PostBuildEvent>
   </PropertyGroup>
