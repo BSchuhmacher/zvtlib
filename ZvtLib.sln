@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardTerminalLibrary", "Card
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardTerminals.Tests", "CardTerminals.Tests\CardTerminals.Tests.csproj", "{2DF3420F-F597-4B98-AA20-3A0FC81F51D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZvtEcrInterface", "ZvtEcrInterface\ZvtEcrInterface.csproj", "{DEF915FC-8CAC-4910-A1B9-9F4A675F3D71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZvtEcrInterface", "ZvtEcrInterface\ZvtEcrInterface.csproj", "{DEF915FC-8CAC-4910-A1B9-9F4A675F3D71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZvtEcrInterfaceTester", "ZvtEcrInterfaceTester\ZvtEcrInterfaceTester.csproj", "{AB85F619-A828-47EE-9DC4-2A937AE01003}"
 EndProject
