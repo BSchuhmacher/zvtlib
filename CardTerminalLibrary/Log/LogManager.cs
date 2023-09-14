@@ -123,8 +123,8 @@ namespace Wiffzack.Diagnostic.Log
         }
 
         /**
-         * Gibt einen bestimmten Logger zurück. (Erzeugt den Log-Pfad
-         * falls nötig.)
+         * Gibt einen bestimmten Logger zurÃ¼ck. (Erzeugt den Log-Pfad
+         * falls nÃ¶tig.)
          */
         public Logger GetLogger(string domain)
         {

@@ -1,5 +1,5 @@
 /**
- * Wiffzack/Diagnostic/Log/TeeLogger.cs - T-Stück Logger (1-auf-2)
+ * Wiffzack/Diagnostic/Log/TeeLogger.cs - T-Stï¿½ck Logger (1-auf-2)
  * 
  * $Id: TeeLogger.cs,v 1.4 2005/09/12 13:07:59 johannes Exp $
  */
@@ -9,7 +9,7 @@ using SysDebug = System.Diagnostics.Debug;
 namespace Wiffzack.Diagnostic.Log
 {
 	/**
-	 * T-Stück Logger mit 2 Ziel-Loggern.
+	 * T-StÃ¼ck Logger mit 2 Ziel-Loggern.
 	 */
 	public class TeeLogger : AbstractLogger
 	{

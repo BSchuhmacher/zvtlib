@@ -5,7 +5,7 @@ namespace Wiffzack.Diagnostic.Log
     /**
      * Im System bekannte Log-Levels. Prinzipiell gilt:
      * Wenn ein Logger auf ein bestimmtes Level konfiguriert
-     * ist, werden alle höheren (numerisch kleineren) Levels
+     * ist, werden alle hï¿½heren (numerisch kleineren) Levels
      * ebenfalls protokolliert.   
      */
     public enum LogLevel
@@ -41,10 +41,10 @@ namespace Wiffzack.Diagnostic.Log
 
     /**
      * Diese Schnittstelle wird von allen Loggern bereitgestellt
-     * und bildet das primäre Interface zwischen Anwendungsprogramm
+     * und bildet das primï¿½re Interface zwischen Anwendungsprogramm
      * und Logging-Subsystem.
      *
-     * Alle öffentlichen Methoden und Eigenschaften eines Loggers 
+     * Alle Ã¶ffentlichen Methoden und Eigenschaften eines Loggers 
      * sind thread-sicher.
      */
     public interface Logger
@@ -54,9 +54,9 @@ namespace Wiffzack.Diagnostic.Log
          *------------------------------------------------------------*/
 
         /**
-         * Gibt den übergeordneten Logger zurück.
-         * (Diese Methode gibt NULL zurück, wenn der Logger keinen
-         * übergeordneten Logger besitzt.) 
+         * Gibt den Ã¼bergeordneten Logger zurÃ¼ck.
+         * (Diese Methode gibt NULL zurÃ¼ck, wenn der Logger keinen
+         * Ã¼bergeordneten Logger besitzt.) 
          */
         Logger Parent { get; }
 
@@ -67,18 +67,18 @@ namespace Wiffzack.Diagnostic.Log
         string LoggerName { get; }
 
         /**
-         * Vollständiger Name der Logger-Domain für diesen Logger.
+         * VollstÃ¤ndiger Name der Logger-Domain fÃ¼r diesen Logger.
          */
         string DomainName { get; }
 
         /**
-         * Loglevel für diesen Logger. (Entspricht somit dem Loglevel
-         * für die von diesem Logger erzeugte Log-Domain)
+         * Loglevel fÃ¼r diesen Logger. (Entspricht somit dem Loglevel
+         * fÃ¼r die von diesem Logger erzeugte Log-Domain)
          */
         LogLevel Level { get; set; }
 
         /**
-         * Legt fest, ob Log-Meldungen auch an den übergeordneten Logger
+         * Legt fest, ob Log-Meldungen auch an den Ã¼bergeordneten Logger
          * weitergeleitet werden sollen.
          */
         bool NotifyParent { get; set; }
@@ -86,7 +86,7 @@ namespace Wiffzack.Diagnostic.Log
         /**
          * Protokolliert den angegebenen Log-Record. (Diese Methode
          * wird u.a. benutzt um die Weiterleitung von Log-Meldungen
-         * an übergeordnete Logger zu implementieren.)
+         * an Ã¼bergeordnete Logger zu implementieren.)
          */
         void Log(LogRecord record);
 
@@ -97,7 +97,7 @@ namespace Wiffzack.Diagnostic.Log
         void Log(LogLevel level, string message, params object[] args);
 
         /**
-         * Sorgt dafür, dass alle gepufferten Daten geschrieben werden.
+         * Sorgt dafÃ¼r, dass alle gepufferten Daten geschrieben werden.
          * (eg. ruft TextWriter.Flush oder was auch immer auf.)
          */
         void Flush();
