@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZvtEcrInterface", "ZvtEcrIn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZvtEcrInterfaceTester", "ZvtEcrInterfaceTester\ZvtEcrInterfaceTester.csproj", "{AB85F619-A828-47EE-9DC4-2A937AE01003}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardTerminalSimulator", "CardTerminalSimulator\CardTerminalSimulator.csproj", "{88502433-D053-442F-9FE9-C5E4911CF430}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AB85F619-A828-47EE-9DC4-2A937AE01003}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB85F619-A828-47EE-9DC4-2A937AE01003}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB85F619-A828-47EE-9DC4-2A937AE01003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88502433-D053-442F-9FE9-C5E4911CF430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88502433-D053-442F-9FE9-C5E4911CF430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88502433-D053-442F-9FE9-C5E4911CF430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88502433-D053-442F-9FE9-C5E4911CF430}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
