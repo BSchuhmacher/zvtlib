@@ -97,13 +97,11 @@ public class ZvtCardEmulatorViewModel : INotifyPropertyChanged
         ServerStatus = ServerStatus == Model.ServerStatus.Offline ? ServerStatus.Online : ServerStatus.Offline;
     }
 
-
     public ZvtCardEmulatorViewModel()
     {
         _terminalSettings = new TerminalSettings();
-        _terminalIpAddress = _terminalSettings.TerminalIpAddress;
-        _terminalPort = _terminalSettings.TerminalPort;
-        _serverStatus = _terminalSettings.ServerStatus;
+        TerminalIpAddress = "127.0.0.1";
+        TerminalPort = 65000;
 
         ToggleServerState = new RelayCommand(DoToggleServerState, CanServerStateBeToggled);
     }

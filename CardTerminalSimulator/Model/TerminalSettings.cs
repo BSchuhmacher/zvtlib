@@ -6,10 +6,10 @@ public class TerminalSettings
     {
         get;
         set;
-    } = "127.0.0.1";
+    }
 
-    public int TerminalPort { get; set; } = 65000;
+    public int TerminalPort { get; set; }
 
-    public ServerStatus ServerStatus { get; set; } = Model.ServerStatus.Offline;
+    public ServerStatus ServerStatus { get; set; }
 
 }
