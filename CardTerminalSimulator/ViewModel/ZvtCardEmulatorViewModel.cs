@@ -4,6 +4,8 @@ using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using System.Windows.Media;
 using CardTerminalSimulator.Model;
+using CommonLibs;
+using JetBrains.Annotations;
 using SuperSimpleTcp;
 
 namespace CardTerminalSimulator.ViewModel;
@@ -12,7 +14,7 @@ public class ZvtCardEmulatorViewModel : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler? PropertyChanged;
 
-    // [NotifyPropertyChangedInvocator]
+    [NotifyPropertyChangedInvocator]
     protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
