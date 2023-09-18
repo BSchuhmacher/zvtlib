@@ -1,7 +1,6 @@
-﻿using System;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 
-namespace CardTerminalSimulator.ViewModel
+namespace CommonLibs
 {
     public class RelayCommand : ICommand
     {

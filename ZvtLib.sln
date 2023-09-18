@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZvtEcrInterfaceTester", "Zv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardTerminalSimulator", "CardTerminalSimulator\CardTerminalSimulator.csproj", "{88502433-D053-442F-9FE9-C5E4911CF430}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibs", "CommonLibs\CommonLibs.csproj", "{AC061E86-87A5-4B5A-ABA4-50B521ACD3AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

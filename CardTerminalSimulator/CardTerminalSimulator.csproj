@@ -16,7 +16,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="JetBrains.Annotations" Version="2023.2.0" />
       <PackageReference Include="SuperSimpleTcp" Version="3.0.13" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CommonLibs\CommonLibs.csproj" />
     </ItemGroup>
 
 </Project>
