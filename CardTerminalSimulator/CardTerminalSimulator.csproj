@@ -15,4 +15,8 @@
       </Page>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="SuperSimpleTcp" Version="3.0.13" />
+    </ItemGroup>
+
 </Project>
