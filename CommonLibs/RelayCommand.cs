@@ -4,10 +4,10 @@ namespace CommonLibs
 {
     public class RelayCommand : ICommand
     {
-        private Action<object> _executeMethod;
-        private Func<object, bool> _canExecuteMethod;
+        private readonly Action<object?> _executeMethod;
+        private readonly Func<object?, bool>? _canExecuteMethod;
 
-        public RelayCommand(Action<object> executeMethod, Func<object, bool> canExecuteMethod = null)
+        public RelayCommand(Action<object?> executeMethod, Func<object?, bool>? canExecuteMethod = null)
         {
             _executeMethod = executeMethod;
             _canExecuteMethod = canExecuteMethod;
@@ -15,7 +15,7 @@ namespace CommonLibs
 
         public bool CanExecute(object? parameter)
         {
-            return _canExecuteMethod == null || _canExecuteMethod(parameter);
+            return _canExecuteMethod is null || _canExecuteMethod(parameter);
         }
 
         public void Execute(object? parameter)
@@ -23,10 +23,10 @@ namespace CommonLibs
             _executeMethod(parameter);
         }
 
-        public event EventHandler? CanExecuteChanged
-        {
-            add => CommandManager.RequerySuggested += value;
-            remove => CommandManager.RequerySuggested -= value;
-        }
+        public event EventHandler? CanExecuteChanged;
+        // {
+        //     add => CommandManager.RequerySuggested += value;
+        //     remove => CommandManager.RequerySuggested -= value;
+        // }
     }
 }
