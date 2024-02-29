@@ -23,10 +23,12 @@ namespace CommonLibs
             _executeMethod(parameter);
         }
 
-        public event EventHandler? CanExecuteChanged;
-        // {
+        // Do I need to add some more stuff here?
+        // Former versions supported something like this ... I did not find a matching solution so far for DOTNET8 WPF
+        //  {
         //     add => CommandManager.RequerySuggested += value;
         //     remove => CommandManager.RequerySuggested -= value;
         // }
+        public event EventHandler? CanExecuteChanged;
     }
 }
